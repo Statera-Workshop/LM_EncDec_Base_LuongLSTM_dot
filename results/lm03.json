@@ -1,0 +1,172 @@
+{
+ "params": 25135762,
+ "epochs": 20,
+ "capped": false,
+ "minutes": 1.2,
+ "test_loss": 3.903846948847175,
+ "test_ppl": 49.59286382317445,
+ "test_acc": 0.5094737718969266,
+ "bleu_greedy": 14.472190196204835,
+ "bleu_greedy_beam_subset": 14.152791595413275,
+ "bleu_beam": 15.613659457863257,
+ "beam_width": 4,
+ "beam_pairs": 500,
+ "history": [
+  {
+   "epoch": 1,
+   "train_loss": 6.052061748504639,
+   "test_loss": 5.353430204403151,
+   "test_acc": 0.2615520900342768
+  },
+  {
+   "epoch": 2,
+   "train_loss": 5.003431940078736,
+   "test_loss": 4.875611595480272,
+   "test_acc": 0.30501751425437607
+  },
+  {
+   "epoch": 3,
+   "train_loss": 4.4474426984786986,
+   "test_loss": 4.498130583393879,
+   "test_acc": 0.343207999703582
+  },
+  {
+   "epoch": 4,
+   "train_loss": 3.928009808063507,
+   "test_loss": 4.164755488526606,
+   "test_acc": 0.37819133372771047
+  },
+  {
+   "epoch": 5,
+   "train_loss": 3.470651590824127,
+   "test_loss": 3.9229098432712095,
+   "test_acc": 0.4074777362353893
+  },
+  {
+   "epoch": 6,
+   "train_loss": 3.044363236427307,
+   "test_loss": 3.7514894840993693,
+   "test_acc": 0.43537156489416884
+  },
+  {
+   "epoch": 7,
+   "train_loss": 2.6064148426055906,
+   "test_loss": 3.6843146577376213,
+   "test_acc": 0.4511541594353568
+  },
+  {
+   "epoch": 8,
+   "train_loss": 2.2005055129528044,
+   "test_loss": 3.5803971018535443,
+   "test_acc": 0.46875131667985864
+  },
+  {
+   "epoch": 9,
+   "train_loss": 1.7881772220134735,
+   "test_loss": 3.51063189222002,
+   "test_acc": 0.4846183117325811
+  },
+  {
+   "epoch": 10,
+   "train_loss": 1.4092903405427932,
+   "test_loss": 3.488649339943932,
+   "test_acc": 0.4909060258171038
+  },
+  {
+   "epoch": 11,
+   "train_loss": 1.0744813561439515,
+   "test_loss": 3.495399777484895,
+   "test_acc": 0.4963075568586753
+  },
+  {
+   "epoch": 12,
+   "train_loss": 0.7924919486045837,
+   "test_loss": 3.5447400286715105,
+   "test_acc": 0.49748913238419507
+  },
+  {
+   "epoch": 13,
+   "train_loss": 0.556257875263691,
+   "test_loss": 3.587565605160596,
+   "test_acc": 0.5003586917576088
+  },
+  {
+   "epoch": 14,
+   "train_loss": 0.36377855241298673,
+   "test_loss": 3.627419735704509,
+   "test_acc": 0.5010338836834642
+  },
+  {
+   "epoch": 15,
+   "train_loss": 0.2332551572471857,
+   "test_loss": 3.6824579815394305,
+   "test_acc": 0.502595273073642
+  },
+  {
+   "epoch": 16,
+   "train_loss": 0.14220174103975297,
+   "test_loss": 3.7426811961095012,
+   "test_acc": 0.5057180215674835
+  },
+  {
+   "epoch": 17,
+   "train_loss": 0.08333552125841379,
+   "test_loss": 3.8062802304817906,
+   "test_acc": 0.5069839981415506
+  },
+  {
+   "epoch": 18,
+   "train_loss": 0.05215377481654286,
+   "test_loss": 3.8280682674755995,
+   "test_acc": 0.5085453898885479
+  },
+  {
+   "epoch": 19,
+   "train_loss": 0.03627154277637601,
+   "test_loss": 3.862157270888938,
+   "test_acc": 0.5085453846718524
+  },
+  {
+   "epoch": 20,
+   "train_loss": 0.02810296732932329,
+   "test_loss": 3.903846948847175,
+   "test_acc": 0.5094737718969266
+  }
+ ],
+ "examples": [
+  {
+   "src": "this winter has been mild .",
+   "ref": "cet hiver a ete doux .",
+   "greedy": "cette histoire est ces derniers ."
+  },
+  {
+   "src": "they will be here at three .",
+   "ref": "ils seront ici a trois heures .",
+   "greedy": "ils vont rester ici ."
+  },
+  {
+   "src": "i once lived in rome .",
+   "ref": "j'ai vecu un temps a rome .",
+   "greedy": "je vis dans une experience ."
+  },
+  {
+   "src": "schedules are difficult to coordinate .",
+   "ref": "les emplois du temps sont difficiles a coordonner .",
+   "greedy": "les hommes sont difficiles a se detendre ."
+  },
+  {
+   "src": "i came here hoping to see tom .",
+   "ref": "je suis venu ici en esperant voir tom .",
+   "greedy": "je suis content pour le dire ."
+  }
+ ],
+ "legacy_source": "C5 (dot)",
+ "config": {
+  "cell": "lstm",
+  "attention": "dot"
+ },
+ "model": "s2s_luong_lstm_dot",
+ "stage": "lm03",
+ "smoke": false,
+ "torch": "2.5.1+cu124"
+}
